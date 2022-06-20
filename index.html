@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button</title>
+
+    <style>
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #151b29;
+        }
+
+        button{
+            background: none;
+            color: #ffa260;
+            border: 2px solid;
+            padding: 10px 30px;
+            font-size: 1.3em;
+            margin: 0 10px;
+            transition-timing-function: ease-in  5s;
+
+        }
+
+        button:hover{
+            border-color:#f1ff5c ;
+            color: white;
+            box-shadow:0 0.5em 0.5em -0.4em;
+            transform:scale(0.9);
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+
+
+
+<body>
+<button>Click me!</button>
+<button>Hover me!</button>
+<script>
+        //Get access to the button
+        const button = document.querySelector('button');
+
+        //Add event listener to the button
+        button.addEventListener('click', showMyName);
+
+        //Function to show my name
+        function showMyName() {
+            alert('Welcome!!\n My name is Bukola Testimony. How may I help you?');
+        }
+
+    </script>
+  
+</body>
+</html>
